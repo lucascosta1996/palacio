@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&subset=latin-ext');
+
 .App {
   text-align: center;
 }
@@ -25,4 +27,13 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.App-clock {
+  font-family: 'Archivo Black', sans-serif;
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+  font-size: 3em;
+  color: #a6a6a6;
 }
