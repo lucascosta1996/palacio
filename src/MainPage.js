@@ -18,6 +18,7 @@ class MainPage extends Component {
   componentWillUnmount() {
     clearInterval(this.intervalID);
   }
+
   tick() {
     this.setState({
       hour: new Date().getHours(),
