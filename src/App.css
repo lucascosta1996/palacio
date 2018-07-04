@@ -9,6 +9,11 @@
     justify-content: space-around;
   }
 
+  a {
+    text-decoration: none;
+    color: #a0a0a0;
+  }
+
   .title {
     font-weight: normal;
     font-size: 1.6em;
@@ -34,7 +39,7 @@
     cursor: pointer;
   }
 
-  .language-checked {
+  .selectedLang {
     font-weight: bold;
   }
 

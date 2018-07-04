@@ -23,8 +23,8 @@ i18n
     keySeparator: '### not used ###', // we use content as keys
 
     backend: {
-      projectId: 'cd703a40-5680-4543-a0f9-a187722c3337', // <-- replace with your projectId
-      apiKey: 'ea061512-a27b-4e90-9199-cf72407d5d4d',
+      projectId: '41a5bfc3-e5a7-4155-bb96-841eb9ef9020', // <-- replace with your projectId
+      apiKey: 'a742faa4-9cf2-403a-846e-f47f84a99aac',
       referenceLng: 'pt'
     },
 
