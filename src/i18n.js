@@ -21,6 +21,7 @@ i18n
     resources: {
          pt: {
            translation: {
+             back: { label: 'voltar' },
              li1: { label: 'exibições', },
              li2: { label: 'sobre', },
              li3: { label: 'publicações', },
@@ -35,6 +36,7 @@ i18n
          },
          en: {
            translation: {
+             back: { label: 'back' },
              li1: { label: 'exhibitions', },
              li2: { label: 'about', },
              li3: { label: 'publications', },

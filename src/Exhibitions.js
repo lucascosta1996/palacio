@@ -44,7 +44,7 @@ class Exhibitions extends Component {
           {this.state.year === "2018" ? <TwoThousandEighteen lng={this.props.lng} /> : null}
           {this.state.year === "2017" ? <TwoThousandSeventeen lng={this.props.lng} /> : null}
         </section>
-        <span className="backBtn"><Link to="/">voltar</Link></span>
+        <span className="backBtn"><Link to="/">{i18n.t('back.label', {lng})}</Link></span>
       </div>
     );
   }

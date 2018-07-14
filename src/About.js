@@ -21,7 +21,7 @@ class About extends Component {
                 <span>{i18n.t('address.label', {lng})}</span>
               </aside>
             </section>
-            <span className="backBtn"><Link to="/">voltar</Link></span>
+            <span className="backBtn"><Link to="/">{i18n.t('back.label', {lng})}</Link></span>
           </div>
     )
   }
