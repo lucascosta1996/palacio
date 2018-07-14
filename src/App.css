@@ -1,5 +1,5 @@
 @media only screen and (max-width: 2560px) {
-  nav, .navigation, .languages, .info, .contact, .signature {
+  nav, .navigation, .languages, .info, .contact, .signature, .exhibitionsNames {
     display: flex;
   }
 
@@ -81,6 +81,28 @@
     left: 5%;
   }
 
+  .exhibitionsNames {
+    flex-direction: column;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+  }
+
+  .exhibitionsNames ul li {
+    padding: 8px;
+  }
+
+  .years li {
+    cursor: pointer;
+  }
+
+  .years {
+    width: 10%;
+    position: absolute;
+    left: 3%;
+    top: 10%;
+  }
+
 }
 
 @media only screen and (max-width: 1360px) {
@@ -114,5 +136,14 @@
 
   .backBtn {
     font-size: 0.8em;
+  }
+
+  .exhibitionsNames ul li {
+    font-size: 0.8em;
+  }
+
+  .years {
+    font-size: 0.9em;
+    left: 2.2%;
   }
 }

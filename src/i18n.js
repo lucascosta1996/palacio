@@ -26,7 +26,11 @@ i18n
              li3: { label: 'publicações', },
              about: { label: 'Estabelecido em Porto Alegre, desde 2016, Palácio é uma Instituição situada em um espaço centenário no Centro Histórico da cidade. Apresenta exibições periódicas em formatos singulares, com visitas realizadas sob agendamento prévio.' },
              address: { label: 'Porto Alegre, Brasil' },
-             infos: { label: 'Informações e agendamentos:' }
+             infos: { label: 'Informações e agendamentos:' },
+             dateTerrestre: { label: '05 de Maio - 05 de Julho, 2018' },
+             datePE: { label: '09 de Março - 22 de Abril, 2018' },
+             dateNE: { label: '19 de agosto - 05 de outubro, 2017' },
+             dateImaterial: { label: '05 de maio - 02 de julho, 2017' }
            },
          },
          en: {
@@ -36,7 +40,11 @@ i18n
              li3: { label: 'publications', },
              about: { label: 'Established in Porto Alegre, since 2016, Palácio is an institution located in a centennial space in the Historic Center of the city. Presenting periodic exhibitions in singular formats, with visits made under previous scheduling.' },
              address: { label: 'Porto Alegre, Brazil' },
-             infos: { label: 'Information and schedules:' }
+             infos: { label: 'Information and schedules:' },
+             dateTerrestre: { label: 'May 5 - June 5, 2018' },
+             datePE: { label: 'March 9 - April 22, 2018' },
+             dateNE: { label: 'August 19 - October 5, 2017'},
+             dateImaterial: { label: 'May 5 - June 2, 2017' }
            },
          },
        },
