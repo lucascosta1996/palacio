@@ -1,13 +1,31 @@
 import React, { Component } from 'react';
-import { translate, Trans } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { I18n, translate, Trans } from 'react-i18next';
+import i18n from './i18n';
 
-const About = () => {
-  const { t, i18n } = this.props;
-  <section>
-    <p>
-      {t('Estabelecido em Porto Alegre, desde 2016, Palácio é uma Instituição situada em um espaço centenário no Centro Histórico da cidade. Apresenta exibições periódicas em formatos singulares, com visitas realizadas sob agendamento prévio.')}
-    </p>
-  </section>
+class About extends Component {
+
+  render(){
+    let lng = this.props.lng
+    return (
+            <div>
+            <section className="info">
+              <p>{i18n.t('about.label', {lng})}</p>
+              <aside className="contact">
+                <span>{i18n.t('infos.label', {lng})}</span>
+                <span>info@ppalacio.xyz</span>
+              </aside>
+              <aside className="signature">
+                <span>Palácio</span>
+                <span>{i18n.t('address.label', {lng})}</span>
+              </aside>
+            </section>
+            <span className="backBtn"><Link to="/">voltar</Link></span>
+          </div>
+    )
+  }
+
 }
 
 export default About;

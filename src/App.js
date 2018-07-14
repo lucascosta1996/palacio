@@ -1,51 +1,64 @@
 import React, { Component } from 'react';
-import MainPage from './MainPage';
-import { translate, Trans } from 'react-i18next';
-import { Link, Route, Switch } from "react-router-dom";
+import { I18n, translate, Trans } from 'react-i18next';
+import { Link, Route, Switch, withRouter } from "react-router-dom";
+import PropTypes from 'prop-types';
 import About from './About';
 import './normalize.css'
 import './App.css';
+import i18n from './i18n';
 
 class App extends Component {
-  state = {
-    selectedLang: ''
+  constructor(props) {
+    super(props)
+    this.state = {
+      lng: 'pt'
+    }
+    this.onLanguageChanged = this.onLanguageChanged.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    i18n.on('languageChanged', this.onLanguageChanged)
+  }
+
+  componentWillUnmount() {
+    i18n.off('languageChanged', this.onLanguageChanged)
+  }
+
+  onLanguageChanged(lng) {
+    this.setState({
+      lng: lng
+    })
+  }
+
+  handleChange(e){
+    console.log(e.target.id);
+    i18n.changeLanguage(e.target.id);
   }
 
   render() {
-    const { t, i18n } = this.props;
-
-    const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-        if(lng === 'pt'){
-          this.setState({
-            selectedLang: 'pt'
-          })
-        } else if (lng === 'en'){
-          this.setState({
-            selectedLang: 'en'
-          })
-        }
-      }
+    let lng = this.state.lng
     return (
-      <div className="App">
-        <nav>
-          <h2 className="title">Palácio</h2>
-          <ul className="navigation">
-              <li>{t('exibições')}</li>
-              <li><Link to="/about">{t('sobre')}</Link></li>
-              <li>{t('publicações')}</li>
-          </ul>
-          <section className="languages">
-          <span onClick={() => changeLanguage('pt')} className={ this.state.selectedLang === 'pt' ? 'selectedLang' : null }>PT</span>
-          <span onClick={() => changeLanguage('en')} className={ this.state.selectedLang === 'en' ? 'selectedLang' : null }>EN</span>
-         </section>
-         <Route path="/about" component={About} />
-        </nav>
-
-
-      </div>
+            <div className="App">
+              <nav>
+                <h2 className="title">PALÁCIO</h2>
+                  <Route exact path="/" render={() => (
+                    <ul className="navigation">
+                    <li>{i18n.t('li1.label', {lng})}</li>
+                    <li><Link to="/about">{i18n.t('li2.label', {lng})}</Link></li>
+                    <li>{i18n.t('li3.label', {lng})}</li>
+                    </ul>
+                  )}/>
+                <section className="languages">
+                <span onClick={this.handleChange} id="pt" className={this.state.lng === 'pt' ? 'selectedLang' : null}>PT</span>
+                <span onClick={this.handleChange} id="en" className={this.state.lng === 'en' ? 'selectedLang' : null}>EN</span>
+               </section>
+              </nav>
+              <Route path="/about" component={About} lng={this.state.lng} />
+            </div>
     );
   }
 }
 
-export default translate('translations')(App);
+
+export default App;

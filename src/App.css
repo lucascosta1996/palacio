@@ -1,12 +1,13 @@
 @media only screen and (max-width: 2560px) {
-  nav, .navigation, .languages {
+  nav, .navigation, .languages, .info, .contact, .signature {
     display: flex;
   }
 
   nav {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     margin-top: 19px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   a {
@@ -43,6 +44,43 @@
     font-weight: bold;
   }
 
+  .info {
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35%;
+  }
+
+  .info p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+  }
+
+  .contact, .signature {
+    flex-direction: column;
+    font-weight: 100;
+    font-size: 1.2em;
+  }
+
+  .contact span {
+    margin-top: 10px;
+  }
+
+  .signature span {
+    margin-top: 10px;
+  }
+
+  .backBtn {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+
 }
 
 @media only screen and (max-width: 1360px) {
@@ -59,6 +97,22 @@
   }
 
   .languages span {
+    font-size: 0.8em;
+  }
+
+  .info {
+    width: 45%;
+  }
+
+  .info p {
+    font-size: 0.8em;
+  }
+
+  .contact, .signature {
+    font-size: 0.8em;
+  }
+
+  .backBtn {
     font-size: 0.8em;
   }
 }
