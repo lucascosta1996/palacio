@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Link, Route } from "react-router-dom";
 import { I18n, translate, Trans } from "react-i18next";
 import i18n from "./i18n";
 import TwoThousandEighteen from './years/TwoThousandEighteen';
 import TwoThousandSeventeen from './years/TwoThousandSeventeen';
+import PotencialEvolutivo from './exhibitions/PotencialEvolutivo';
 
 class Exhibitions extends Component {
   constructor(props) {
@@ -33,20 +33,26 @@ class Exhibitions extends Component {
     let lng = this.props.lng
     return (
       <div>
-        <nav className="years">
-          <ul>
-            <li onClick={this.year2018} className={this.state.year === '2018' ? 'selectedLang' : null}>2018</li>
-            <li onClick={this.year2017} className={this.state.year === '2017' ? 'selectedLang' : null}>2017</li>
-            <li onClick={this.year2016} className={this.state.year === '2016' ? 'selectedLang' : null}>2016</li>
-          </ul>
-        </nav>
-        <section>
-          {this.state.year === "2018" ? <TwoThousandEighteen lng={this.props.lng} /> : null}
-          {this.state.year === "2017" ? <TwoThousandSeventeen lng={this.props.lng} /> : null}
-        </section>
-        <span className="backBtn">
-          <Link to="/">{i18n.t('back.label', {lng})}</Link>
-        </span>
+          <Route exact path="/exhibitions" render={() => (
+            <div>
+            <nav className="years">
+              <ul>
+                <li onClick={this.year2018} className={this.state.year === '2018' ? 'selectedLang' : null}>2018</li>
+                <li onClick={this.year2017} className={this.state.year === '2017' ? 'selectedLang' : null}>2017</li>
+                <li onClick={this.year2016} className={this.state.year === '2016' ? 'selectedLang' : null}>2016</li>
+              </ul>
+            </nav>
+            <section>
+              {this.state.year === "2018" ? <TwoThousandEighteen lng={this.props.lng} /> : null}
+              {this.state.year === "2017" ? <TwoThousandSeventeen lng={this.props.lng} /> : null}
+            </section>
+            <span className="backBtn">
+              <Link to="/">{i18n.t('back.label', {lng})}</Link>
+            </span>
+          </div>
+          )}
+        />
+        <Route exact path="/exhibitions/potencialevolutivo" component={PotencialEvolutivo} lng={lng} />
       </div>
     );
   }

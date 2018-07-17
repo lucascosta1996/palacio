@@ -41,7 +41,7 @@ class App extends Component {
     let lng = this.state.lng
     return (
             <div className="App">
-              <nav>
+              <nav className="mainNav">
                 <h2 className="title"><Link to='/'>PALÁCIO</Link></h2>
                   <Route exact path="/" render={() => (
                     <ul className="navigation">
