@@ -161,6 +161,19 @@
 }
 
 @media only screen and (max-width: 1360px) {
+  .exhibitionTitle span {
+    font-size: 0.8em;
+    margin: 3px 0 3px 0;
+  }
+
+  .exhibitionDescription span {
+    font-size: 0.8em;
+  }
+
+  .exhibitionDescription {
+    padding: 40px 0 140px 0;
+  }
+
   .title {
     font-size: 1.2em
   }
