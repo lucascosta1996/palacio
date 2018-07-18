@@ -7,6 +7,7 @@
     "i18next-browser-languagedetector": "^2.2.0",
     "i18next-locize-backend": "^1.6.0",
     "i18next-node-locize-backend": "^2.4.0",
+    "js-file-download": "^0.4.1",
     "locize-editor": "^1.4.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",

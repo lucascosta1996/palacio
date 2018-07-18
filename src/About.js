@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { I18n, translate, Trans } from 'react-i18next';
 import i18n from './i18n';
 

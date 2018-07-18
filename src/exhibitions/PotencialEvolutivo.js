@@ -7,7 +7,8 @@ import i18n from "../i18n";
 class PotencialEvolutivo extends Component {
   state = {
     pictures: Array.from({ length: 4 }),
-    hasMore: true
+    hasMore: true,
+    language: this.props.lng
   };
 
   fetchMoreData = () => {
@@ -19,13 +20,14 @@ class PotencialEvolutivo extends Component {
     // 20 more records in .5 secs
     setTimeout(() => {
       this.setState({
-        pictures: this.state.pictures.concat(Array.from({ length: 2 }))
+        pictures: this.state.pictures.concat(Array.from({ length: 1 }))
       });
     }, 500);
   };
 
   render() {
     let lng = this.props.lng
+    let pdf = i18n.t('PEpdf.label', {lng})
     return (
       <div>
           <div className="exhibitionTitle">
@@ -48,16 +50,23 @@ class PotencialEvolutivo extends Component {
                 <span>{i18n.t('PEDescription6.label', {lng})}</span>
                 <span>{i18n.t('PEDescription7.label', {lng})}</span>
                 <span>{i18n.t('PEDescription8.label', {lng})}</span>
+              <section className="exhibitionDetails">
+                <p>Noturno, 2018</p>
+                <p>4K video, sound</p>
+                <p>{i18n.t('duration.label', {lng})}</p>
+              </section>
+                <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} download={pdf+'.pdf'}>{i18n.t('download.label', {lng})}</a>
+                <span>{i18n.t('moreInfo.label', {lng})}</span>
               </div>
             }
           >
             {this.state.pictures.map(
               (i, index) =>
-                index === 0 ? (
+                index === 6 ? (
                   (index = null)
                 ) : (
                   <img src={require(`../potencialEvolutivo/PE${index}.jpg`)} key={index} />
-                )
+              )
             )}
           </InfiniteScroll>
 

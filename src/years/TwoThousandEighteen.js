@@ -16,7 +16,7 @@ class TwoThousandEighteen extends Component{
             <li><i>Terrestre</i></li>
             <li>{i18n.t('dateTerrestre.label', {lng})}</li>
           </ul>
-          <ul>
+          <ul className="bckgChange">
             <Link to="/exhibitions/potencialevolutivo">
             <li>Andrés Stephanou</li>
             <li><i>Potencial Evolutivo</i></li>

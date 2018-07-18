@@ -10,7 +10,9 @@ class Exhibitions extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { year: "2018" };
+    this.state = {
+      year: "2018"
+    };
 
     this.year2018 = this.year2018.bind(this);
     this.year2017 = this.year2017.bind(this);
