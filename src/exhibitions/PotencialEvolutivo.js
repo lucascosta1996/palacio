@@ -50,12 +50,12 @@ class PotencialEvolutivo extends Component {
                 <span>{i18n.t('PEDescription6.label', {lng})}</span>
                 <span>{i18n.t('PEDescription7.label', {lng})}</span>
                 <span>{i18n.t('PEDescription8.label', {lng})}</span>
-              <section className="exhibitionDetails">
+              {/*<section className="exhibitionDetails">
                 <p>Noturno, 2018</p>
                 <p>4K video, sound</p>
                 <p>{i18n.t('duration.label', {lng})}</p>
-              </section>
-                <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} download={pdf+'.pdf'}>{i18n.t('download.label', {lng})}</a>
+              </section>*/}
+                <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
                 <span>{i18n.t('moreInfo.label', {lng})}</span>
               </div>
             }

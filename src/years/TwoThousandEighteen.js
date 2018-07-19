@@ -12,9 +12,16 @@ class TwoThousandEighteen extends Component{
       <Route path="/exhibitions" render={() => (
         <section className="exhibitionsNames">
           <ul>
+            <li>Lucas Alves Costa</li>
+            <li><i>Undefined</i></li>
+            <li>{i18n.t('dateTesting.label', {lng})}</li>
+          </ul>
+          <ul>
+          <Link to="/exhibitions/terrestre">
             <li>Emerson da Silva</li>
             <li><i>Terrestre</i></li>
             <li>{i18n.t('dateTerrestre.label', {lng})}</li>
+          </Link>
           </ul>
           <ul className="bckgChange">
             <Link to="/exhibitions/potencialevolutivo">
