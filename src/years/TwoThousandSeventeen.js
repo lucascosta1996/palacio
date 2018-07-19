@@ -18,9 +18,11 @@ class TwoThousandSeventeen extends Component{
         </Link>
         </ul>
         <ul>
+        <Link to="/exhibitions/imaterial">
           <li>Andrés Stephanou</li>
           <li><i>Imaterial</i></li>
           <li>{i18n.t('dateImaterial.label', {lng})}</li>
+        </Link>
         </ul>
       </section>
     )}

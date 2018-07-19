@@ -4,9 +4,11 @@ import { I18n, translate, Trans } from "react-i18next";
 import i18n from "./i18n";
 import TwoThousandEighteen from './years/TwoThousandEighteen';
 import TwoThousandSeventeen from './years/TwoThousandSeventeen';
+import TwoThousandSixteen from './years/TwoThousandSixteen';
 import PotencialEvolutivo from './exhibitions/PotencialEvolutivo';
 import Terrestre from './exhibitions/Terrestre';
 import NovasEspecies from './exhibitions/NovasEspecies';
+import Imaterial from './exhibitions/Imaterial';
 
 class Exhibitions extends Component {
   constructor(props) {
@@ -49,6 +51,7 @@ class Exhibitions extends Component {
             <section>
               {this.state.year === "2018" ? <TwoThousandEighteen lng={this.props.lng} /> : null}
               {this.state.year === "2017" ? <TwoThousandSeventeen lng={this.props.lng} /> : null}
+              {this.state.year === "2016" ? <TwoThousandSixteen lng={this.props.lng} /> : null}
             </section>
             <span className="backBtn">
               <Link to="/">{i18n.t('back.label', {lng})}</Link>
@@ -59,6 +62,7 @@ class Exhibitions extends Component {
         <Route exact path="/exhibitions/potencialevolutivo" component={PotencialEvolutivo} lng={lng} />
         <Route exact path="/exhibitions/terrestre" component={Terrestre} lng={lng} />
         <Route exact path="/exhibitions/novasespecies" component={NovasEspecies} lng={lng} />
+        <Route exact path="/exhibitions/imaterial" component={Imaterial} lng={lng} />
       </div>
     );
   }
