@@ -6,6 +6,7 @@ import TwoThousandEighteen from './years/TwoThousandEighteen';
 import TwoThousandSeventeen from './years/TwoThousandSeventeen';
 import PotencialEvolutivo from './exhibitions/PotencialEvolutivo';
 import Terrestre from './exhibitions/Terrestre';
+import NovasEspecies from './exhibitions/NovasEspecies';
 
 class Exhibitions extends Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class Exhibitions extends Component {
         />
         <Route exact path="/exhibitions/potencialevolutivo" component={PotencialEvolutivo} lng={lng} />
         <Route exact path="/exhibitions/terrestre" component={Terrestre} lng={lng} />
+        <Route exact path="/exhibitions/novasespecies" component={NovasEspecies} lng={lng} />
       </div>
     );
   }
