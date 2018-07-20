@@ -12,7 +12,7 @@ class TwoThousandSixteen extends Component{
         <section className="exhibitionsNames">
           <ul>
             <li><i>{i18n.t('foundation.label', {lng})}</i></li>
-            <li><i>{i18n.t('foundationDate.label', {lng})}</i></li>            
+            <li>{i18n.t('foundationDate.label', {lng})}</li>            
           </ul>
         </section>
       )}

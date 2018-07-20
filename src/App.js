@@ -47,7 +47,7 @@ class App extends Component {
                     <ul className="navigation">
                     <li><Link to="/exhibitions">{i18n.t('li1.label', {lng})}</Link></li>
                     <li><Link to="/about">{i18n.t('li2.label', {lng})}</Link></li>
-                    <li>{i18n.t('li3.label', {lng})}</li>
+                    <li><Link to="/about">{i18n.t('li3.label', {lng})}</Link></li>
                     </ul>
                   )}/>
                 <section className="languages">
