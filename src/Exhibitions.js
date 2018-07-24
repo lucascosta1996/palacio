@@ -45,13 +45,11 @@ class Exhibitions extends Component {
               <ul>
                 <li onClick={this.year2018} className={this.state.year === '2018' ? 'selectedLang' : null}>2018</li>
                 <li onClick={this.year2017} className={this.state.year === '2017' ? 'selectedLang' : null}>2017</li>
-                <li onClick={this.year2016} className={this.state.year === '2016' ? 'selectedLang' : null}>2016</li>
               </ul>
             </nav>
             <section>
               {this.state.year === "2018" ? <TwoThousandEighteen lng={this.props.lng} /> : null}
               {this.state.year === "2017" ? <TwoThousandSeventeen lng={this.props.lng} /> : null}
-              {this.state.year === "2016" ? <TwoThousandSixteen lng={this.props.lng} /> : null}
             </section>
             <span className="backBtn">
               <Link to="/">{i18n.t('back.label', {lng})}</Link>

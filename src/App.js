@@ -4,6 +4,8 @@ import { Link, Route, Switch, withRouter } from "react-router-dom";
 import PropTypes from 'prop-types';
 import About from './About';
 import Exhibitions from './Exhibitions';
+import Publications from './Publications';
+import Events from './Events';
 import './normalize.css'
 import './App.css';
 import i18n from './i18n';
@@ -47,7 +49,8 @@ class App extends Component {
                     <ul className="navigation">
                     <li><Link to="/exhibitions">{i18n.t('li1.label', {lng})}</Link></li>
                     <li><Link to="/about">{i18n.t('li2.label', {lng})}</Link></li>
-                    <li><Link to="/about">{i18n.t('li3.label', {lng})}</Link></li>
+                    <li><Link to="/publications">{i18n.t('li3.label', {lng})}</Link></li>
+                    <li><Link to="/events">{i18n.t('li4.label', {lng})}</Link></li>
                     </ul>
                   )}/>
                 <section className="languages">
@@ -57,6 +60,8 @@ class App extends Component {
               </nav>
               <Route path="/about" component={About} lng={this.state.lng} />
               <Route path="/exhibitions" component={Exhibitions} lng={this.state.lng} />
+              <Route path="/publications" component={Publications} lng={this.state.lng} />
+              <Route path="/events" component={Events} lng={this.state.lng} />
             </div>
     );
   }

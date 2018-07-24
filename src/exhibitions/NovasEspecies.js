@@ -49,7 +49,6 @@ class NovasEspecies extends Component {
                 <span>{i18n.t('NovasEspeciesDescription5.label', {lng})}</span>
                 <span>{i18n.t('NovasEspeciesDescription6.label', {lng})}</span>
                 <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
-                <span>{i18n.t('moreInfo.label', {lng})}</span>
               </div>
             }
           >

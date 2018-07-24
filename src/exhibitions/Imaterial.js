@@ -51,7 +51,6 @@ class Imaterial extends Component {
                 <span>{i18n.t('ImaterialDescription7.label', {lng})}</span>
                 <span>{i18n.t('ImaterialDescription8.label', {lng})}</span>
                 <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
-                <span>{i18n.t('moreInfo.label', {lng})}</span>
               </div>
             }
           >

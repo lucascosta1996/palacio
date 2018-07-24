@@ -56,7 +56,6 @@ class PotencialEvolutivo extends Component {
                 <p>{i18n.t('duration.label', {lng})}</p>
               </section>*/}
                 <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
-                <span>{i18n.t('moreInfo.label', {lng})}</span>
               </div>
             }
           >

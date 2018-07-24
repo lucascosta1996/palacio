@@ -12,20 +12,20 @@ class TwoThousandEighteen extends Component{
         <section className="exhibitionsNames">
           <ul>
             <li>Lucas Alves Costa</li>
-            <li><i>Undefined</i></li>
+            <li></li>
             <li>{i18n.t('dateTesting.label', {lng})}</li>
           </ul>
           <ul>
           <Link to="/exhibitions/terrestre">
             <li>Emerson da Silva</li>
-            <li><i>Terrestre</i></li>
+            <li>Terrestre</li>
             <li>{i18n.t('dateTerrestre.label', {lng})}</li>
           </Link>
           </ul>
           <ul className="bckgChange">
             <Link to="/exhibitions/potencialevolutivo">
             <li>Andrés Stephanou</li>
-            <li><i>Potencial Evolutivo</i></li>
+            <li>Potencial Evolutivo</li>
             <li>{i18n.t('datePE.label', {lng})}</li>
             </Link>
           </ul>
