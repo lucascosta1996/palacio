@@ -62,11 +62,10 @@ class NovasEspecies extends Component {
             )}
           </InfiniteScroll>
 
-        <div className="backBtn">
-          <span>
-            <Link to="/exhibitions">{i18n.t('back.label', {lng})}</Link>
-          </span>
-        </div>
+        <span className="backBtn">
+          <Link to="/exhibitions">{i18n.t('back.label', {lng})}</Link>
+        </span>
+
       </div>
     );
   }

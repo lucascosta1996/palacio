@@ -252,12 +252,12 @@
 
   .eventPageTitle {
     padding: 80px 0 30px 0;
-    width: 30%;
-    font-size: 1em;
+    width: 33%;
+    font-size: 0.9em;
   }
 
   .eventPage {
-    width: 30%;
+    width: 33%;
     margin: auto;
   }
 
@@ -265,9 +265,13 @@
     padding-bottom: 25px;
   }
 
-  .eventPage p, span {
+  .eventPage p {
     padding: 20px 0 20px 0;
-    font-size: 0.6em;
+    font-size: 0.7em;
+  }
+
+  .date {
+    font-size: 0.7em;
   }
 
   .exhibitionTitle span {
@@ -345,7 +349,175 @@
 
 }
 
- @media only screen and (min-width: 320px) and (max-width: 768px){
+/* iPad in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .languages {
+    flex-basis: 10%;
+  }
+
+  .years {
+    top: 10%;
+    left: 5%;
+  }
+
+  .years ul {
+    padding-left: 0;
+  }
+
+  .exhibitionsNames {
+    top: 20%;
+    left: 25%;
+  }
+
+  .exhibitionTitle {
+    width: 80%;
+  }
+
+  .infinite-scroll-component {
+    width: 90%;
+  }
+
+  .eventPage, .eventPageTitle {
+    width: 50%;
+  }
+
+  .eventPageTitle {
+    padding: 125px 0 65px 0;
+  }
+}
+
+/* iPad in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .navigation {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    padding-left: 0;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-basis: 30%;
+    height: 70px;
+  }
+
+  .navigation li {
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+
+  .languages {
+    flex-basis: 10%;
+  }
+
+  .years {
+    top: 5%;
+    left: 5%;
+  }
+
+  .years ul {
+    padding-left: 0;
+  }
+
+  .exhibitionsNames {
+    top: 20%;
+    left: 25%;
+  }
+
+  .exhibitionTitle {
+    width: 80%;
+  }
+
+  .infinite-scroll-component {
+    width: 90%;
+  }
+
+  .info, .publications, .events {
+    width: 60%;
+    left: 20%;
+  }
+
+  .eventPage, .eventPageTitle {
+    width: 70%;
+  }
+
+  .eventPageTitle {
+    padding: 125px 0 65px 0;
+  }
+
+}
+
+/* iPhone 6 Plus in landscape */
+ @media only screen
+ and (min-device-width : 414px)
+ and (max-device-width : 736px)
+ and (orientation : landscape) {
+
+   .navigation {
+     flex-basis: 68%;
+   }
+
+   .eventPage {
+       width: 43%;
+       margin: auto;
+       margin-bottom: 80px;
+   }
+
+   .eventPageTitle {
+     width: 43%;
+   }
+
+   .exhibitionTitle {
+     padding: 90px 0 65px 0;
+   }
+
+   .exhibitionsNames {
+     left: 40%;
+     top: 20%;
+     font-size: 0.7em;
+   }
+
+   .languages {
+     flex-basis: 10%;
+   }
+
+   .contact span {
+     padding: 2px 0 2px 0;
+     font-size: 1em;
+   }
+
+   .signature span {
+     padding: 2px 0 2px 0;
+     font-size: 1em;
+   }
+
+   .contact {
+     padding-bottom: 60px;
+   }
+
+ }
+
+ /* iPhone 6 Plus in portrait */
+ @media only screen
+ and (min-device-width : 414px)
+ and (max-device-width : 736px)
+ and (orientation : portrait) {
+   .exhibitionsNames {
+     left: 10%;
+   }
+ }
+
+/* @media only screen and (min-width: 320px) and (max-width: 768px) */
+@media only screen
+ and (min-device-width : 375px)
+ and (max-device-width : 667px)
+ and (orientation : portrait) {
       .mainNav {
         width: 90%;
         margin-top: 0;
@@ -403,7 +575,7 @@
 
      .exhibitionsNames {
        top: 20%;
-       left: 12%;
+       left: 5%;
      }
 
      .backBtn {
@@ -434,10 +606,215 @@
 
      .eventPageTitle {
        width: 90%;
-       font-size: 1.2em;
+       font-size: 0.9em;
      }
 
      .eventPage {
        width: 90%;
      }
  }
+
+ /* iPhone 6 Plus in landscape */
+   @media only screen
+   and (min-device-width : 375px)
+   and (max-device-width : 667px)
+   and (orientation : landscape) {
+
+    .navigation {
+      flex-basis: 70%;
+    }
+
+    .exhibitionTitle {
+      padding: 90px 0 65px 0;
+    }
+    .exhibitionsNames {
+      left: 25%;
+      top: 20%;
+      font-size: 0.7em;
+    }
+
+    .years {
+      top: 15%;
+      left: 5%;
+    }
+
+    .years ul {
+      padding-left: 0;
+    }
+
+    .languages {
+      flex-basis: 10%;
+    }
+
+    .contact span {
+      padding: 2px 0 2px 0;
+      font-size: 1em;
+    }
+
+    .signature span {
+      padding: 2px 0 2px 0;
+      font-size: 1em;
+    }
+
+    .contact {
+      padding-bottom: 60px;
+    }
+
+   }
+
+    /* iPhone 5 & 5S in landscape */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px)
+    and (orientation : landscape) {
+      .navigation ul {
+        padding-left: 0;
+      }
+
+      .navigation a {
+        font-size: 0.8em;
+      }
+
+      .info {
+        top: 18%;
+      }
+
+      .publications {
+        left: 25%;
+      }
+
+      .events {
+        left: 25%;
+      }
+
+      .languages {
+        font-size: 0.9em;
+      }
+
+      .title a {
+        font-size: 0.9em;
+      }
+
+      .backBtn {
+        left: 5%;
+        font-size: 0.6em;
+      }
+
+      .exhibitionsNames {
+        top: 15%;
+      }
+
+      .exhibitionsNames ul li {
+        padding: 5px 0 5px 0;
+        font-size: 0.8em;
+      }
+
+      .exhibitionTitle {
+        padding: 90px 0 30px 0;
+      }
+
+    }
+
+    /* iPhone 5 & 5S in portrait */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px)
+    and (orientation : portrait) {
+      .mainNav {
+        width: 90%;
+        margin-top: 0;
+      }
+
+      .events {
+        left: 7%;
+      }
+
+      .eventPageTitle {
+        width: 90%;
+      }
+
+      .eventPage {
+        width: 90%;
+      }
+
+      .publications {
+        left: 10%;
+      }
+
+      .backBtn {
+        left: 5%;
+      }
+
+      .info {
+        width: 75%;
+        left: 15%;
+      }
+
+      .contact span {
+        padding: 2px 0 2px 0;
+        font-size: 1em;
+      }
+
+      .signature span {
+        padding: 2px 0 2px 0;
+        font-size: 1em;
+      }
+
+      .contact {
+        padding-bottom: 60px;
+      }
+
+      .navigation {
+       position: absolute;
+       top: 70%;
+       left: 0;
+       padding-left: 0;
+       flex-direction: column;
+       align-self: flex-start;
+       align-items: flex-start;
+       justify-content: space-around;
+       flex-basis: 30%;
+       height: 70px;
+     }
+
+     .navigation li {
+       margin-left: 0;
+       font-size: 0.9em;
+     }
+
+     .languages {
+       flex-basis: 20%;
+     }
+
+     .years {
+       top: 7%;
+       left: 5%;
+     }
+
+     .years ul {
+       padding-left: 0;
+     }
+
+     .exhibitionsNames {
+       top: 20%;
+       left: 2%;
+     }
+
+     .exhibitionTitle {
+       padding: 90px 0 30px 0;
+       width: 90%;
+     }
+
+     .infinite-scroll-component {
+       width: 100%;
+     }
+
+     .infinite-scroll-component img {
+        margin: 2px 0 2px 0;
+     }
+
+     .languages {
+       flex-basis: 15%;
+     }
+
+    }
