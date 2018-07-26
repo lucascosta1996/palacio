@@ -1,6 +1,10 @@
-@media only screen and (max-width: 2560px) {
-  nav, .navigation, .languages, .info, .contact, .signature, .exhibitionsNames, .exhibitionTitle, .exhibitionDescription {
+@media only screen and (max-width: 2048px) {
+  nav, .navigation, .languages, .info, .contact, .signature, .exhibitionsNames, .exhibitionTitle, .exhibitionDescription, .eventPage {
     display: flex;
+  }
+
+  .exhibitionDescription, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle {
+    font-size: 1em;
   }
 
   .mainNav {
@@ -12,6 +16,10 @@
     left:5%;
     right: 5%;
     top:0%;
+  }
+
+  .mainNav a:hover {
+    color: #3CF000;
   }
 
   a {
@@ -55,7 +63,6 @@
   }
 
   .linkDownload {
-    margin: 40px 0 40px 0;
     color: #0956bf;
   }
 
@@ -69,6 +76,7 @@
     align-self: flex-start;
   }
 
+  /*PALÁCIO WORD*/
   .title {
     font-weight: normal;
     font-size: 1.6em;
@@ -87,6 +95,7 @@
     color: #3CF000;
   }
 
+  /*PT EN LABELS*/
   .languages {
     align-items: center;
     justify-content: space-around;
@@ -102,37 +111,28 @@
     font-weight: bold;
   }
 
+  /*ABOUT PAGE*/
   .info {
-    width: 50%;
+    width: 45%;
     margin: auto;
     position: absolute;
     left: 25%;
     top: 25%;
     flex-direction: column;
-    justify-content: space-between;
-    height: 25%;
+    justify-content: space-around;
+    height: 20%;
   }
 
-  .info p {
-    font-family: 'Heebo', sans-serif;
-    font-size: 1.2em;
-    font-weight: 100;
+  .info span {
+    height: 35%;
   }
 
   .contact, .signature {
     flex-direction: column;
-    font-weight: 100;
-    font-size: 1.2em;
+    height: 32.5%;
   }
 
-  .contact span {
-    margin-top: 10px;
-  }
-
-  .signature span {
-    margin-top: 10px;
-  }
-
+  /*BACK BUTTON, SAME FOR EVERY PAGE*/
   .backBtn {
     position: fixed;
     bottom: 4%;
@@ -180,6 +180,7 @@
     position: absolute;
     left: 3%;
     top: 10%;
+    padding-left: 0;
   }
 
  .infinite-scroll-component {
@@ -215,7 +216,6 @@
 }
 
 .events ul li {
-  font-size: 1.2em;
   padding-bottom: 20px;
 }
 
@@ -224,7 +224,7 @@
 }
 
 .eventPageTitle {
-  width: 38%;
+  width: 48%;
   margin: auto;
 }
 
@@ -233,105 +233,200 @@
 }
 
 .eventPage {
-  width: 38%;
+  width: 48%;
   margin: auto;
+  flex-direction: column;
 }
 
 .eventPage img {
   width: 100%;
-  padding-bottom: 55px;
 }
 
 .eventPage p {
-  padding: 35px 0 35px 0;
+  font-size: 1em;
+}
+
+.eventPage h3 {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.eventDate {
+  padding: 48px 0 48px 0;
 }
 
 }
 
-@media only screen and (max-width: 1360px) {
-
+@media only screen and (max-width: 1920px) {
   .eventPageTitle {
-    padding: 80px 0 30px 0;
-    width: 33%;
-    font-size: 0.9em;
+    width: 43%;
+    margin: auto;
   }
 
   .eventPage {
-    width: 33%;
+    width: 43%;
     margin: auto;
   }
 
   .eventPage img {
-    padding-bottom: 25px;
+    width: 100%;
   }
 
   .eventPage p {
-    padding: 20px 0 20px 0;
-    font-size: 0.7em;
+    font-size: 1em;
   }
 
-  .date {
-    font-size: 0.7em;
+  .eventPage h3 {
+    font-weight: normal;
+    font-size: 1em;
   }
 
-  .exhibitionTitle span {
+  .linkDownload {
+    padding: 35px 0 95px 0;
+  }
+
+  .eventDate {
+    padding: 25px 0 25px 0;
+  }
+}
+
+
+@media only screen and (max-width: 1366px) {
+  .mainNav {
     font-size: 0.8em;
-    margin: 3px 0 3px 0;
   }
 
-  .exhibitionDescription span {
+  .exhibitionsNames {
+    left: 35%;
+  }
+
+  .exhibitionDescription, .exhibitionsNames, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle  {
     font-size: 0.8em;
   }
 
-  .exhibitionDetails, .linkDownload {
-    font-size: 0.8em;
-  }
-
-  .exhibitionDescription {
-    padding: 40px 0 140px 0;
-  }
-
-  .title {
-    font-size: 1.2em
-  }
-
-  .navigation li {
-    font-size: 1.1em;
+  .backBtn {
+    left: 5%;
   }
 
   .languages {
     flex-basis: 5%;
   }
 
-  .languages span {
-    font-size: 0.8em;
+  .publications {
+    left: 37%;
+  }
+
+  .events {
+    left: 35%;
+  }
+
+  .eventPageTitle {
+    width: 48%;
+    margin: auto;
+    padding: 140px 0 45px 0;
+  }
+
+  .eventPage {
+    width: 48%;
+    margin: auto;
+  }
+
+  .eventPage img {
+    width: 100%;
+  }
+
+  .eventPage p {
+    font-size: 1em;
+  }
+
+  .eventPage h3 {
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  .years ul {
+    padding-left: 0;
+  }
+
+  .years {
+    left: 5%;
   }
 
   .info {
     width: 45%;
+    height: 25%;
+    justify-content: space-around;
   }
 
-  .info p {
-    font-size: 0.8em;
+  .info span {
+    height: 35%;
+    font-size: 13px;
   }
 
   .contact, .signature {
+    height: 32.5%;
+  }
+
+
+}
+
+@media only screen and (max-width: 1360px) {
+  .mainNav {
     font-size: 0.8em;
+  }
+
+  .exhibitionDescription, .exhibitionsNames, .backBtn, .navigation, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle, .linkDownload  {
+    font-size: 0.8em;
+  }
+
+  .eventPageTitle {
+    padding: 80px 0 30px 0;
+    width: 47x%;
+  }
+
+  .eventPage {
+    width: 47%;
+    margin: auto;
+  }
+
+  .exhibitionTitle span {
+    margin: 3px 0 3px 0;
+  }
+
+  .exhibitionDescription {
+    padding: 40px 0 140px 0;
+  }
+
+  .languages {
+    flex-basis: 5%;
+  }
+
+  .info {
+    width: 45%;
+    height: 30%;
+    justify-content: space-around;
+  }
+
+  .info span {
+    height: 35%;
+    font-size: 12px;
+  }
+
+  .contact, .signature {
+    height: 32.5%;
   }
 
   .backBtn {
     font-size: 0.8em;
   }
 
-
   .exhibitionsNames ul li {
-    font-size: 0.8em;
     padding: 5px;
   }
 
   .years {
     font-size: 0.9em;
-    left: 2.2%;
+    left: 5%;
   }
 
   .publications {
@@ -343,7 +438,6 @@
   }
 
   .events ul li {
-    font-size: 0.7em;
     padding-bottom: 20px;
   }
 
@@ -525,20 +619,6 @@ and (orientation : portrait) {
 
       .languages {
         flex-basis: 13%;
-      }
-
-      .contact span {
-        padding: 2px 0 2px 0;
-        font-size: 1em;
-      }
-
-      .signature span {
-        padding: 2px 0 2px 0;
-        font-size: 1em;
-      }
-
-      .contact {
-        padding-bottom: 30px;
       }
 
      .navigation {
@@ -748,20 +828,7 @@ and (orientation : portrait) {
       .info {
         width: 75%;
         left: 15%;
-      }
-
-      .contact span {
-        padding: 2px 0 2px 0;
-        font-size: 1em;
-      }
-
-      .signature span {
-        padding: 2px 0 2px 0;
-        font-size: 1em;
-      }
-
-      .contact {
-        padding-bottom: 60px;
+        height: 40%;
       }
 
       .navigation {
@@ -806,7 +873,7 @@ and (orientation : portrait) {
      }
 
      .infinite-scroll-component {
-       width: 100%;
+       width: 96%;
      }
 
      .infinite-scroll-component img {

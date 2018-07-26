@@ -15,11 +15,16 @@ class Noturno extends Component {
           </div>
           <section className="eventPage">
             <img src={require(`./images/noturno.jpg`)} />
-            <span className="date">{i18n.t('eventDate3.label', {lng})}</span>
-            <p>{i18n.t('event3.label', {lng})}</p>
+            <div className="eventDate">
+              <h3>{i18n.t('eventDate3.label', {lng})}</h3>
+              <h3>{i18n.t('eventDay3.label', {lng})}</h3>
+            </div>
+              <p>{i18n.t('event3.label', {lng})}</p>
+              <p>{i18n.t('freeEventNoturno.label', {lng})}</p>
 
-            <span><a className="linkDownload" href="#" target="_blank">newsletter</a></span>
-          </section>
+                <a className="linkDownload" href="#" target="_blank">RSVP</a>
+
+            </section>
 
 
         <span className="backBtn"><Link to="/events">{i18n.t('back.label', {lng})}</Link></span>

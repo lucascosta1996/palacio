@@ -15,10 +15,15 @@ class Conversa extends Component {
           </div>
           <section className="eventPage">
             <img src={require(`./images/conversaguiada.png`)} />
-            <span className="date">{i18n.t('eventDate1.label', {lng})}</span>
+          <div className="eventDate">
+            <h3>{i18n.t('eventDate1.label', {lng})}</h3>
+            <h3>{i18n.t('eventDay1.label', {lng})}</h3>
+          </div>
             <p>{i18n.t('event1.label', {lng})}</p>
+            <p>{i18n.t('freeEvent.label', {lng})}</p>
 
-            <span><a className="linkDownload" href="#" target="_blank">newsletter</a></span>
+              <a className="linkDownload" href="#" target="_blank">RSVP</a>
+
           </section>
 
 
