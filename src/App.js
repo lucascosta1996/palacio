@@ -35,7 +35,6 @@ class App extends Component {
   }
 
   handleChange(e){
-    console.log(e.target.id);
     i18n.changeLanguage(e.target.id);
   }
 
@@ -50,7 +49,6 @@ class App extends Component {
                     <li><Link to="/exhibitions">{i18n.t('li1.label', {lng})}</Link></li>
                     <li><Link to="/about">{i18n.t('li2.label', {lng})}</Link></li>
                     <li><Link to="/publications">{i18n.t('li3.label', {lng})}</Link></li>
-                    <li><Link to="/events">{i18n.t('li4.label', {lng})}</Link></li>
                     </ul>
                   )}/>
                 <section className="languages">

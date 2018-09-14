@@ -12,6 +12,7 @@ class Imaterial extends Component {
   };
 
   fetchMoreData = () => {
+    //infinite scroll
     if (this.state.pictures.length === 6) {
       this.setState({ hasMore: false });
       return;
@@ -24,6 +25,17 @@ class Imaterial extends Component {
       });
     }, 500);
   };
+
+  componentDidUpdate(prevProps, prevState, snapshot){
+    if (this.refs.description1 !== undefined) {
+      let d1 = this.refs.description1;
+      let d2 = this.refs.description2;
+      let d8 = this.refs.description8;
+      d1.innerHTML = d1.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
+      d2.innerHTML = d2.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
+      d8.innerHTML = d8.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
+    }
+  }
 
   render() {
     let lng = this.props.lng
@@ -41,15 +53,15 @@ class Imaterial extends Component {
             loader={<h4>...</h4>}
             endMessage={
               <div className="exhibitionDescription">
-                <span className="exhibitionDescription--date">{i18n.t('datePE.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription1.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription2.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription3.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription4.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription5.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription6.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription7.label', {lng})}</span>
-                <span>{i18n.t('ImaterialDescription8.label', {lng})}</span>
+                <span className="exhibitionDescription--date">{i18n.t('dateImaterial.label', {lng})}</span>
+                <span ref="description1">{i18n.t('ImaterialDescription1.label', {lng})}</span>
+                <span ref="description2">{i18n.t('ImaterialDescription2.label', {lng})}</span>
+                <span ref="description3">{i18n.t('ImaterialDescription3.label', {lng})}</span>
+                <span ref="description4">{i18n.t('ImaterialDescription4.label', {lng})}</span>
+                <span ref="description5">{i18n.t('ImaterialDescription5.label', {lng})}</span>
+                <span ref="description6">{i18n.t('ImaterialDescription6.label', {lng})}</span>
+                <span ref="description7">{i18n.t('ImaterialDescription7.label', {lng})}</span>
+                <span ref="description8">{i18n.t('ImaterialDescription8.label', {lng})}</span>
                 <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
               </div>
             }
@@ -67,7 +79,7 @@ class Imaterial extends Component {
           <span className="backBtn">
             <Link to="/exhibitions">{i18n.t('back.label', {lng})}</Link>
           </span>
-          
+
       </div>
     );
   }

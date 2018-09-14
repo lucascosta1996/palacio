@@ -45,6 +45,7 @@ class Exhibitions extends Component {
               <ul>
                 <li onClick={this.year2018} className={this.state.year === '2018' ? 'selectedLang' : null}>2018</li>
                 <li onClick={this.year2017} className={this.state.year === '2017' ? 'selectedLang' : null}>2017</li>
+                <li className="eventsListItem"><Link to="/events">{i18n.t('li4.label', {lng})}</Link></li>
               </ul>
             </nav>
             <section>

@@ -25,6 +25,15 @@ class PotencialEvolutivo extends Component {
     }, 500);
   };
 
+  componentDidUpdate(prevProps, prevState, snapshot){
+    if (this.refs.description1 !== undefined) {
+      let d1 = this.refs.description1;
+      let d2 = this.refs.description2;
+      d1.innerHTML = d1.innerHTML.replace("Potencial Evolutivo", "<b>Potencial Evolutivo</b>");
+      d2.innerHTML = d2.innerHTML.replace("Noturno", "<i>Noturno</i>");
+    }
+  }
+
   render() {
     let lng = this.props.lng
     let pdf = i18n.t('PEpdf.label', {lng})
@@ -42,8 +51,8 @@ class PotencialEvolutivo extends Component {
             endMessage={
               <div className="exhibitionDescription">
                 <span className="exhibitionDescription--date">{i18n.t('datePE.label', {lng})}</span>
-                <span>{i18n.t('PEDescription.label', {lng})}</span>
-                <span>{i18n.t('PEDescription2.label', {lng})}</span>
+                <span ref="description1">{i18n.t('PEDescription.label', {lng})}</span>
+                <span ref="description2">{i18n.t('PEDescription2.label', {lng})}</span>
                 <span>{i18n.t('PEDescription3.label', {lng})}</span>
                 <span>{i18n.t('PEDescription4.label', {lng})}</span>
                 <span>{i18n.t('PEDescription5.label', {lng})}</span>
@@ -72,7 +81,7 @@ class PotencialEvolutivo extends Component {
           <span className="backBtn">
             <Link to="/exhibitions">{i18n.t('back.label', {lng})}</Link>
           </span>
-          
+
       </div>
     );
   }

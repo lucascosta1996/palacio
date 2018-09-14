@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 @media only screen and (max-width: 2048px) {
   nav, .navigation, .languages, .info, .contact, .signature, .exhibitionsNames, .exhibitionTitle, .exhibitionDescription, .eventPage {
     display: flex;
@@ -19,7 +21,7 @@
   }
 
   .mainNav a:hover {
-    color: #3CF000;
+    color: #37FF05;
   }
 
   a {
@@ -78,6 +80,7 @@
 
   /*PALÁCIO WORD*/
   .title {
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 1.6em;
   }
@@ -92,7 +95,7 @@
     font-size: 1.5em;
   }
   .navigation a:hover {
-    color: #3CF000;
+    color: #37FF05;
   }
 
   /*PT EN LABELS*/
@@ -140,7 +143,7 @@
   }
 
   .backBtn a:hover {
-    color: #3CF000;
+    color: #37FF05;
   }
 
   .exhibitionsNames {
@@ -159,12 +162,16 @@
   }
 
   .exhibitionsNames ul:hover a li:nth-child(odd) {
-    color: #3CF000;
+    color: #37FF05;
     /*color: #1EE3A3;*/
   }
 
   .exhibitionsNames ul:hover a li:nth-child(2) {
-    color: #3CF000;
+    color: #37FF05;
+  }
+
+  .eventsListItem {
+    margin-top: 10px;
   }
 
   .years li {
@@ -219,9 +226,11 @@
   padding-bottom: 20px;
 }
 
-.events a:hover {
-  color: #3CF000;
+.events ul:hover, li:hover, a:hover {
+  color: #37FF05;
 }
+
+
 
 .eventPageTitle {
   width: 48%;
@@ -288,6 +297,10 @@
   .eventDate {
     padding: 25px 0 25px 0;
   }
+
+  .eventsListItem {
+    margin-top: 15px;
+  }
 }
 
 
@@ -302,6 +315,10 @@
 
   .exhibitionDescription, .exhibitionsNames, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle  {
     font-size: 0.8em;
+  }
+
+  .eventsListItem {
+    margin-top: 30px;
   }
 
   .backBtn {
@@ -377,6 +394,10 @@
 
   .exhibitionDescription, .exhibitionsNames, .backBtn, .navigation, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle, .linkDownload  {
     font-size: 0.8em;
+  }
+
+  .eventsListItem {
+    margin-top: 30px;
   }
 
   .eventPageTitle {
@@ -511,7 +532,7 @@ and (orientation : portrait) {
   }
 
   .years {
-    top: 5%;
+    top: 7%;
     left: 5%;
   }
 
@@ -595,6 +616,10 @@ and (orientation : portrait) {
      padding-bottom: 60px;
    }
 
+   .years {
+     top: 15%;
+   }
+
  }
 
  /* iPhone 6 Plus in portrait */
@@ -604,6 +629,10 @@ and (orientation : portrait) {
  and (orientation : portrait) {
    .exhibitionsNames {
      left: 10%;
+   }
+
+   .eventsListItem {
+     margin-top: 12px;
    }
  }
 
@@ -654,7 +683,7 @@ and (orientation : portrait) {
      }
 
      .exhibitionsNames {
-       top: 20%;
+       top: 25%;
        left: 5%;
      }
 
@@ -842,6 +871,7 @@ and (orientation : portrait) {
        justify-content: space-around;
        flex-basis: 30%;
        height: 70px;
+       font-size: 1.1em;
      }
 
      .navigation li {
@@ -863,7 +893,7 @@ and (orientation : portrait) {
      }
 
      .exhibitionsNames {
-       top: 20%;
+       top: 30%;
        left: 2%;
      }
 
