@@ -12,7 +12,7 @@ class About extends Component {
             <section className="info">
               <span>{i18n.t('about.label', {lng})}</span>
               <aside className="contact">
-                <span>{i18n.t('infos.label', {lng})}</span>
+                <span></span>
                 <span>info@palacio.xyz</span>
               </aside>
               <aside className="signature">
