@@ -19,7 +19,7 @@ class Events extends Component {
                     <li><Link to="/events/conversa"><b>{i18n.t('eventDate1.label', {lng})}</b> Conversa guiada com Lucas Alves Costa</Link></li>
                   </ul>
                   <ul>
-                    <li><Link to="/events/terrestreextra"><b>{i18n.t('eventDate2.label', {lng})}</b> Terrestre</Link></li>
+                    <li><Link to="/events/terrestreextra"><b>{i18n.t('eventDate2.label', {lng})}</b> Terrestre (extra)</Link></li>
                   </ul>
                   <ul className="bckgChange">
                     <li><Link to="/events/noturno"><b>{i18n.t('eventDate3.label', {lng})}</b> Noturno</Link></li>

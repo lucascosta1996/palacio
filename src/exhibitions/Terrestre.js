@@ -31,7 +31,7 @@ class Terrestre extends Component {
       let d2 = this.refs. description2;
       let d5 = this.refs.description5;
       d1.innerHTML = d1.innerHTML.replace("Terrestre", "<b>Terrestre</b>");
-      d2.innerHTML = d2.innerHTML.replace("Adaptação reversa", "<i>Adaptação reversa</i>");
+      d2.innerHTML = d2.innerHTML.replace("Adaptação Reversa", "<i>Adaptação Reversa</i>");
       d5.innerHTML = d5.innerHTML.replace("Terrestre", "<b>Terrestre</b>");
     }
   }

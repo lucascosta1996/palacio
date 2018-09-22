@@ -58,7 +58,7 @@ i18n
                PEDescription7: { label: "A exibição resulta em um conjunto de obras de diálogo singular — técnico, compacto e circular, de inter-relação direta ou indireta. Sob tonalidade metafórica, todas obras são manufaturadas; digitalmente ou industrialmente. Não há contato manual direto entre o artista e a produção das mesmas, apenas a concepção para fabricação e montagem." },
                PEDescription8: { label: "Andrés Stephanou (1993, Porto Alegre) vive e trabalha em Porto Alegre, Brasil." },
                duration: { label: "duração 16''05'" },
-               PEpdf: { label: "Andres Stephanou - Imaterial 2017 PT" },
+               PEpdf: { label: "Andres Stephanou - Potencial Evolutivo 2017 PT" },
                NEpdf: { label: "Emerson da Silva - Novas Especies 2017 PT" },
                Imaterialpdf: { label: "Andres Stephanou - Imaterial 2017 PT" },
                Terrestrepdf: { label: "Emerson da Silva  - Terrestre 2018 PT" },
