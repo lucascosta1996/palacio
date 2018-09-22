@@ -11,9 +11,11 @@ class TwoThousandEighteen extends Component{
       <Route path="/exhibitions" render={() => (
         <section className="exhibitionsNames">
           <ul>
+            <a href="">
             <li>Lucas Alves Costa</li>
             <li></li>
             <li>{i18n.t('dateTesting.label', {lng})}</li>
+            </a>
           </ul>
           <ul>
           <Link to="/exhibitions/terrestre">

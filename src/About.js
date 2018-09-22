@@ -13,7 +13,9 @@ class About extends Component {
               <span>{i18n.t('about.label', {lng})}</span>
               <aside className="contact">
                 <span></span>
-                <span>info@palacio.xyz</span>
+                <span>
+                  <a href="mailto:info@palacio.xyz">info@palacio.xyz</a>
+                </span>
               </aside>
               <aside className="signature">
                 <span>Palácio</span>

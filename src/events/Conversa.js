@@ -22,7 +22,7 @@ class Conversa extends Component {
             <p>{i18n.t('event1.label', {lng})}</p>
             <p>{i18n.t('freeEvent.label', {lng})}</p>
 
-              <a className="linkDownload" href="#" target="_blank">RSVP</a>
+              <a className="linkDownload" href="mailto:info@palacio.xyz">RSVP</a>
 
           </section>
 

@@ -26,7 +26,7 @@ class NoturnoComponent extends Component {
             <p ref="description">{i18n.t('event3.label', {lng})}</p>
             <p>{i18n.t('freeEventNoturno.label', {lng})}</p>
 
-              <a className="linkDownload" href="#" target="_blank">RSVP</a>
+              <a className="linkDownload" href="mailto:info@palacio.xyz">RSVP</a>
 
           </section>
 
