@@ -28,7 +28,7 @@ class Terrestre extends Component {
   componentDidUpdate(prevProps, prevState, snapshot){
     if (this.refs.description1 !== undefined) {
       let d1 = this.refs.description1;
-      let d2 = this.refs. description2;
+      let d2 = this.refs.description2;
       let d5 = this.refs.description5;
       d1.innerHTML = d1.innerHTML.replace("Terrestre", "<b>Terrestre</b>");
       d2.innerHTML = d2.innerHTML.replace("Adaptação Reversa", "<i>Adaptação Reversa</i>");

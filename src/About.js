@@ -17,7 +17,18 @@ class About extends Component {
                   <a href="mailto:info@palacio.xyz">info@palacio.xyz</a>
                 </span>
               </aside>
+              <aside className="newsletter">
+                <span></span>
+                <span>
+                  <b>Newsletter</b>
+                </span>
+                <div>
+                  <input placeholder="email" className="newsletterInput" />
+                  <a href="" className="sendEmail">SEND</a>
+                </div>    
+              </aside>
               <aside className="signature">
+                <span></span>
                 <span>Palácio</span>
                 <span>{i18n.t('address.label', {lng})}</span>
               </aside>

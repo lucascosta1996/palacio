@@ -10,6 +10,11 @@ class NoturnoComponent extends Component {
     description.innerHTML = description.innerHTML.replace("Potencial Evolutivo", "<b>Potencial Evolutivo</b>").replace("Noturno", "<i>Noturno</i>");
   }
 
+  componentDidUpdate(){
+    let description = this.refs.description;
+    description.innerHTML = description.innerHTML.replace("Potencial Evolutivo", "<b>Potencial Evolutivo</b>").replace("Noturno", "<i>Noturno</i>");
+  }
+
   render(){
     let lng = this.props.long
     return (

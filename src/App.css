@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@media only screen and (max-width: 2048px) {
-  nav, .navigation, .languages, .info, .contact, .signature, .exhibitionsNames, .exhibitionTitle, .exhibitionDescription, .eventPage {
+@media only screen and (max-width: 3840px) {
+  nav, .navigation, .languages, .info, .newsletter, .contact, .signature, .exhibitionsNames, .exhibitionTitle, .exhibitionDescription, .eventPage {
     display: flex;
   }
 
@@ -120,10 +120,10 @@
     margin: auto;
     position: absolute;
     left: 25%;
-    top: 25%;
+    top: 34%;
     flex-direction: column;
     justify-content: space-around;
-    height: 20%;
+    height: 26%;
   }
 
   .info span {
@@ -264,6 +264,33 @@
   padding: 48px 0 48px 0;
 }
 
+.newsletter {
+  padding: 0 0 40px 0;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 44%;
+}
+
+.newsletterInput {
+  display: inline;
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid black; 
+  transition: all 0.5s ease-in; 
+}
+
+.sendEmail{
+  display: inline;
+  width: 50%;
+  color: #0A63DB;
+}
+
+input:focus {
+  outline: 0 none;
+  box-shadow: none;
+  border-bottom: 1px solid #a0a0a0;
+}
+
 }
 
 @media only screen and (max-width: 1920px) {
@@ -371,7 +398,7 @@
 
   .info {
     width: 45%;
-    height: 25%;
+    height: 32%;
     justify-content: space-around;
   }
 

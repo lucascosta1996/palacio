@@ -7,8 +7,14 @@ class TerrestreExtraComponent extends Component {
 
   componentDidMount(){
     let description = this.refs.description;
-    description.innerHTML = description.innerHTML.replace("Terrestre", "<b>Terrestre</b>").replace("Adaptação reversa", "<i>Adaptação reversa</i>");
+    description.innerHTML = description.innerHTML.replace("Terrestre", "<b>Terrestre</b>")
+    .replace("Adaptação Reversa", "<i>Adaptação reversa</i>");
+  }
 
+  componentDidUpdate(){
+    let description = this.refs.description;
+    description.innerHTML = description.innerHTML.replace("Terrestre", "<b>Terrestre</b>")
+    .replace("Adaptação Reversa", "<i>Adaptação reversa</i>");
   }
 
   render(){
