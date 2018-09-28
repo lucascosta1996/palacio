@@ -126,11 +126,8 @@
     height: 26%;
   }
 
-  .info span {
-    height: 35%;
-  }
-
   .contact, .signature {
+    justify-content: center;
     flex-direction: column;
     height: 32.5%;
   }
@@ -230,8 +227,6 @@
   color: #37FF05;
 }
 
-
-
 .eventPageTitle {
   width: 48%;
   margin: auto;
@@ -264,10 +259,14 @@
   padding: 48px 0 48px 0;
 }
 
+.aboutDescription {
+  height: 37%;
+}
+
 .newsletter {
-  padding: 0 0 40px 0;
   -ms-flex-direction: column;
   flex-direction: column;
+  justify-content: center;
   height: 44%;
 }
 
@@ -327,6 +326,10 @@ input:focus {
 
   .eventsListItem {
     margin-top: 15px;
+  }
+
+  .aboutDescription {
+    height: 37%;
   }
 }
 
@@ -398,19 +401,24 @@ input:focus {
 
   .info {
     width: 45%;
-    height: 32%;
+    height: 39%;
     justify-content: space-around;
-  }
-
-  .info span {
-    height: 35%;
-    font-size: 13px;
   }
 
   .contact, .signature {
     height: 32.5%;
   }
 
+  .newsletter {
+    -ms-flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    height: 31%;
+  }
+
+  .aboutDescription {
+    height: 20%;
+  }
 
 }
 
@@ -453,11 +461,6 @@ input:focus {
     width: 45%;
     height: 30%;
     justify-content: space-around;
-  }
-
-  .info span {
-    height: 35%;
-    font-size: 12px;
   }
 
   .contact, .signature {

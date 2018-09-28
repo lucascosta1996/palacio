@@ -10,15 +10,13 @@ class About extends Component {
     return (
             <div>
             <section className="info">
-              <span>{i18n.t('about.label', {lng})}</span>
+              <span className="aboutDescription">{i18n.t('about.label', {lng})}</span>
               <aside className="contact">
-                <span></span>
                 <span>
                   <a href="mailto:info@palacio.xyz">info@palacio.xyz</a>
                 </span>
               </aside>
               <aside className="newsletter">
-                <span></span>
                 <span>
                   <b>Newsletter</b>
                 </span>
@@ -28,7 +26,6 @@ class About extends Component {
                 </div>    
               </aside>
               <aside className="signature">
-                <span></span>
                 <span>Palácio</span>
                 <span>{i18n.t('address.label', {lng})}</span>
               </aside>
