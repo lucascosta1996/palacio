@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { I18n, translate, Trans } from 'react-i18next';
 import { Link, Route, Switch, withRouter } from "react-router-dom";
 import PropTypes from 'prop-types';
+import * as firebase from 'firebase';
 import About from './About';
 import Exhibitions from './Exhibitions';
 import Publications from './Publications';
@@ -18,6 +19,18 @@ class App extends Component {
     }
     this.onLanguageChanged = this.onLanguageChanged.bind(this);
     this.handleChange = this.handleChange.bind(this);
+  }
+
+  async componentWillMount(){
+    var config = {
+      apiKey: "AIzaSyDQyMY0xYH4eNML9Sa-xrjchsF0ZK5y73c",
+      authDomain: "palacioxyz-1ba8b.firebaseapp.com",
+      databaseURL: "https://palacioxyz-1ba8b.firebaseio.com",
+      projectId: "palacioxyz-1ba8b",
+      storageBucket: "palacioxyz-1ba8b.appspot.com",
+      messagingSenderId: "671224123755"
+    };
+    firebase.initializeApp(config);
   }
 
   componentDidMount() {
