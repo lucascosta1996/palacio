@@ -9,6 +9,22 @@
     font-size: 1em;
   }
 
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a0a0a0;
+    font-style: italic;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: #a0a0a0;
+      font-style: italic;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+      color: #a0a0a0;
+      font-style: italic;
+  }
+
   .mainNav {
     width: 90%;
     margin: auto;
@@ -272,10 +288,16 @@
 
 .newsletterInput {
   display: inline;
-  width: 30%;
+  width: 35%;
+  margin-top: 1%;
   border: none;
-  border-bottom: 1px solid black; 
+  border-bottom: 0.2px solid #9e9c9c; 
   transition: all 0.5s ease-in; 
+}
+
+input[type="email"]
+{
+    font-style: italic;
 }
 
 .sendEmail{
@@ -407,6 +429,7 @@ input:focus {
 
   .contact, .signature {
     height: 32.5%;
+    font-size: 1em;
   }
 
   .newsletter {
@@ -465,6 +488,7 @@ input:focus {
 
   .contact, .signature {
     height: 32.5%;
+    font-size: 1em;
   }
 
   .backBtn {
@@ -648,6 +672,10 @@ and (orientation : portrait) {
 
    .years {
      top: 15%;
+   }
+
+   .newsletterInput{
+     width: 70%;
    }
 
  }

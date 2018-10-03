@@ -21,8 +21,8 @@ class About extends Component {
                   <b>Newsletter</b>
                 </span>
                 <div>
-                  <input placeholder="email" className="newsletterInput" />
-                  <a href="" className="sendEmail">SEND</a>
+                  <input type="email" placeholder="email" className="newsletterInput" />
+                  <a href="" className="sendEmail">Send</a>
                 </div>    
               </aside>
               <aside className="signature">
