@@ -11,15 +11,14 @@ class About extends Component {
 
   onSendEmailAddress(){
     let email = this.state.email;
-    firebase.database().ref(`subscribers/` + email.toLowerCase())
+    firebase.database().ref(`subscribers/` + email.toLowerCase().replace(/[!@#$%^&*()_.+\-=\[\]{};':"\\]+/g, ""))
     .set({
       email: email
     })
-    .then(this.request
-    )
-    .then((res) => {debugger;})
-    .catch(error => {
-      debugger;
+    .then((res) => {})
+    .catch(error => {})
+    this.setState({
+      email: ''
     })
   }
 
@@ -42,9 +41,10 @@ class About extends Component {
                 <div>
                   <input type="email" 
                          placeholder="email"
-                         className="newsletterInput" 
+                         className="newsletterInput"
+                         value={email} 
                          onChange={(event) => {this.setState({ email: event.target.value })}} />
-                  <span href="#" className="sendEmail" onClick={this.onSendEmailAddress.bind(this)}>Send</span>
+                  <span href="#" className="sendEmail" onClick={this.onSendEmailAddress.bind(this)}>{i18n.t('send.label', {lng})}</span>
                 </div>    
               </aside>
               <aside className="signature">

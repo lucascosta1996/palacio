@@ -304,6 +304,8 @@ input[type="email"]
   display: inline;
   width: 50%;
   color: #0A63DB;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 input:focus {
