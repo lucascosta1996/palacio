@@ -298,6 +298,7 @@
 input[type="email"]
 {
     font-style: italic;
+    color: #a0a0a0;
 }
 
 .sendEmail{
