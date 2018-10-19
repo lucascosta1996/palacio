@@ -28,12 +28,13 @@ class Imaterial extends Component {
 
   componentDidUpdate(prevProps, prevState, snapshot){
     if (this.refs.description1 !== undefined) {
+      debugger;
       let d1 = this.refs.description1;
       let d2 = this.refs.description2;
-      let d8 = this.refs.description8;
+      let d6 = this.refs.description6;
       d1.innerHTML = d1.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
       d2.innerHTML = d2.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
-      d8.innerHTML = d8.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
+      d6.innerHTML = d6.innerHTML.replace("Imaterial", "<b>Imaterial</b>");
     }
   }
 
@@ -60,15 +61,13 @@ class Imaterial extends Component {
                 <span ref="description4">{i18n.t('ImaterialDescription4.label', {lng})}</span>
                 <span ref="description5">{i18n.t('ImaterialDescription5.label', {lng})}</span>
                 <span ref="description6">{i18n.t('ImaterialDescription6.label', {lng})}</span>
-                <span ref="description7">{i18n.t('ImaterialDescription7.label', {lng})}</span>
-                <span ref="description8">{i18n.t('ImaterialDescription8.label', {lng})}</span>
                 <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
               </div>
             }
           >
             {this.state.pictures.map(
               (i, index) =>
-                index === 6 ? (
+                index === 5 ? (
                   (index = null)
                 ) : (
                   <img src={require(`../imaterial/i${index}.jpg`)} key={index} />
