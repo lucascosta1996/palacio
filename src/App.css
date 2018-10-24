@@ -309,6 +309,10 @@ input[type="email"]
   cursor: pointer;
 }
 
+.sendEmail:hover{
+  font-weight: bold;
+}
+
 input:focus {
   outline: 0 none;
   box-shadow: none;

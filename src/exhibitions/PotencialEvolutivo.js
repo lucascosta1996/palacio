@@ -28,9 +28,9 @@ class PotencialEvolutivo extends Component {
   componentDidUpdate(prevProps, prevState, snapshot){
     if (this.refs.description1 !== undefined) {
       let d1 = this.refs.description1;
-      let d2 = this.refs.description2;
+      let d3 = this.refs.description3;
       d1.innerHTML = d1.innerHTML.replace("Potencial Evolutivo", "<b>Potencial Evolutivo</b>");
-      d2.innerHTML = d2.innerHTML.replace("Noturno", "<i>Noturno</i>");
+      d3.innerHTML = d3.innerHTML.replace("Noturno", "<i>Noturno</i>");
     }
   }
 
@@ -52,8 +52,8 @@ class PotencialEvolutivo extends Component {
               <div className="exhibitionDescription">
                 <span className="exhibitionDescription--date">{i18n.t('datePE.label', {lng})}</span>
                 <span ref="description1">{i18n.t('PEDescription.label', {lng})}</span>
-                <span ref="description2">{i18n.t('PEDescription2.label', {lng})}</span>
-                <span>{i18n.t('PEDescription3.label', {lng})}</span>
+                <span>{i18n.t('PEDescription2.label', {lng})}</span>
+                <span ref="description3">{i18n.t('PEDescription3.label', {lng})}</span>
                 <span>{i18n.t('PEDescription4.label', {lng})}</span>
                 <span>{i18n.t('PEDescription5.label', {lng})}</span>
                 <span>{i18n.t('PEDescription6.label', {lng})}</span>
