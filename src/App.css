@@ -496,6 +496,7 @@ input:focus {
   .contact, .signature {
     height: 32.5%;
     font-size: 1em;
+    padding: 30px 0 30px 0;
   }
 
   .backBtn {
@@ -523,6 +524,12 @@ input:focus {
     padding-bottom: 20px;
   }
 
+}
+
+@media only screen and (max-width: 1280px) {
+  .contact{
+    padding-top: 15px;
+  }
 }
 
 /* iPad in landscape */
@@ -562,6 +569,10 @@ and (orientation : landscape) {
 
   .eventPageTitle {
     padding: 125px 0 65px 0;
+  }
+
+  .contact {
+    padding-top: 30px;
   }
 }
 
@@ -922,7 +933,12 @@ and (orientation : portrait) {
       .info {
         width: 75%;
         left: 15%;
-        height: 40%;
+        top: 120px;
+        height: 53%;
+      }
+
+      .contact {
+        padding-top: 30px;
       }
 
       .navigation {
