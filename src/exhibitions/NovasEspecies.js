@@ -28,9 +28,9 @@ class NovasEspecies extends Component {
   componentDidUpdate(prevProps, prevState, snapshot){
     if (this.refs.description1 !== undefined) {
       let d1 = this.refs.description1;
-      let d5 = this.refs.description5;
+      let d2 = this.refs.description2;
       d1.innerHTML = d1.innerHTML.replace("Novas Espécies", "<b>Novas Espécies</b>");
-      d5.innerHTML = d5.innerHTML.replace("Novas Espécies", "<b>Novas Espécies</b>");
+      d2.innerHTML = d2.innerHTML.replace("Novas Espécies", "<b>Novas Espécies</b>");
     }
   }
 
@@ -52,10 +52,10 @@ class NovasEspecies extends Component {
               <div className="exhibitionDescription">
                 <span className="exhibitionDescription--date">{i18n.t('dateNE.label', {lng})}</span>
                 <span ref="description1">{i18n.t('NovasEspeciesDescription1.label', {lng})}</span>
-                <span>{i18n.t('NovasEspeciesDescription2.label', {lng})}</span>
+                <span ref="description2">{i18n.t('NovasEspeciesDescription2.label', {lng})}</span>
                 <span>{i18n.t('NovasEspeciesDescription3.label', {lng})}</span>
                 <span>{i18n.t('NovasEspeciesDescription4.label', {lng})}</span>
-                <span ref="description5">{i18n.t('NovasEspeciesDescription5.label', {lng})}</span>
+                <span>{i18n.t('NovasEspeciesDescription5.label', {lng})}</span>
                 <span>{i18n.t('NovasEspeciesDescription6.label', {lng})}</span>
                 <a className="linkDownload" href={require('../downloads/'+pdf+'.pdf')} target="_blank">{i18n.t('download.label', {lng})}</a>
               </div>

@@ -159,6 +159,10 @@
     color: #37FF05;
   }
 
+  .big__exhibitionsNames {
+    top: 18%!important;
+  }
+
   .exhibitionsNames {
     flex-direction: column;
     position: absolute;
@@ -975,7 +979,7 @@ and (orientation : portrait) {
 
      .exhibitionsNames {
        top: 30%;
-       left: 2%;
+       left: 11%;
      }
 
      .exhibitionTitle {

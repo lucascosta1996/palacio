@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link, Route } from "react-router-dom";
 import { I18n, translate, Trans } from "react-i18next";
 import i18n from "./i18n";
+import TwoThousandNineteen from './years/TwoThousandNineteen';
 import TwoThousandEighteen from './years/TwoThousandEighteen';
 import TwoThousandSeventeen from './years/TwoThousandSeventeen';
 import TwoThousandSixteen from './years/TwoThousandSixteen';
@@ -18,9 +19,14 @@ class Exhibitions extends Component {
       year: "2018"
     };
 
+    this.year2019 = this.year2019.bind(this);
     this.year2018 = this.year2018.bind(this);
     this.year2017 = this.year2017.bind(this);
     this.year2016 = this.year2016.bind(this);
+  }
+
+  year2019() {
+    this.setState({ year: "2019" });
   }
 
   year2018() {
@@ -43,12 +49,14 @@ class Exhibitions extends Component {
             <div>
             <nav className="years">
               <ul>
+                <li onClick={this.year2019} className={this.state.year === '2019' ? 'selectedLang' : null}>2019</li>
                 <li onClick={this.year2018} className={this.state.year === '2018' ? 'selectedLang' : null}>2018</li>
                 <li onClick={this.year2017} className={this.state.year === '2017' ? 'selectedLang' : null}>2017</li>
                 <li className="eventsListItem"><Link to="/events">{i18n.t('li4.label', {lng})}</Link></li>
               </ul>
             </nav>
             <section>
+              {this.state.year === "2019" ? <TwoThousandNineteen lng={this.props.lng} /> : null}
               {this.state.year === "2018" ? <TwoThousandEighteen lng={this.props.lng} /> : null}
               {this.state.year === "2017" ? <TwoThousandSeventeen lng={this.props.lng} /> : null}
             </section>
