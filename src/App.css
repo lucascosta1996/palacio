@@ -365,6 +365,10 @@ input:focus {
     top: 11%;
   }
 
+  .big__exhibitionsNames {
+    top: 11%!important;
+  }
+
   .aboutDescription {
     height: 37%;
   }
@@ -381,7 +385,7 @@ input:focus {
   } 
   
   .big__exhibitionsNames {
-    top: 18%!important;
+    top: 11%!important;
   }
 
   .exhibitionDescription, .exhibitionsNames, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle  {
