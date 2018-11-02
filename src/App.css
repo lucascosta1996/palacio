@@ -326,6 +326,10 @@ input:focus {
 }
 
 @media only screen and (max-width: 1920px) {
+  .exhibitionDescription, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle {
+    font-size: 0.8em;
+  }
+
   .eventPageTitle {
     width: 43%;
     margin: auto;
@@ -366,6 +370,10 @@ input:focus {
     top: 18%!important;
   }
 
+  .exhibitionsNames {
+    font-size: 0.8em
+  }
+
   .aboutDescription {
     height: 37%;
   }
@@ -386,7 +394,7 @@ input:focus {
   }
 
   .exhibitionDescription, .exhibitionsNames, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle  {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
 
   .eventsListItem {
@@ -537,6 +545,10 @@ input:focus {
     padding-bottom: 20px;
   }
 
+  .big__exhibitionsNames {
+    top: 20%!important;
+  }
+
 }
 
 @media only screen and (max-width: 1280px) {
@@ -544,9 +556,8 @@ input:focus {
     padding-top: 15px;
   }
 
-  
   .big__exhibitionsNames {
-    top: 18%!important;
+    top: 15%!important;
   }
 }
 
