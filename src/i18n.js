@@ -125,7 +125,7 @@ i18n
           datePE: { label: 'March 9 – April 22, 2018' },
           dateNE: { label: 'August 19 – October 5, 2017'},
           dateImaterial: { label: 'May 5 – June 2, 2017' },
-          dateGabriel19: { label: 'October 05 –  December 03, 2019 9'},
+          dateGabriel19: { label: 'October 05 –  December 03, 2019'},
           dateAlexandre19: { label: 'August 03 – September 20, 2019' },
           dateAndres19: { label: 'March 02 – April 21, 2019' },
           dateEmerson19: { label: 'May 11 – July 7, 2019' },

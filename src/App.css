@@ -361,6 +361,11 @@ input:focus {
     margin-top: 15px;
   }
 
+  
+  .big__exhibitionsNames {
+    top: 18%!important;
+  }
+
   .aboutDescription {
     height: 37%;
   }
@@ -374,6 +379,10 @@ input:focus {
 
   .exhibitionsNames {
     left: 35%;
+  } 
+  
+  .big__exhibitionsNames {
+    top: 18%!important;
   }
 
   .exhibitionDescription, .exhibitionsNames, .backBtn, .events, .exhibitionTitle, .publications, .info, .contact, .address, .eventPage, .eventPageTitle  {
@@ -533,6 +542,11 @@ input:focus {
 @media only screen and (max-width: 1280px) {
   .contact{
     padding-top: 15px;
+  }
+
+  
+  .big__exhibitionsNames {
+    top: 18%!important;
   }
 }
 
